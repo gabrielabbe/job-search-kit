@@ -1,0 +1,22 @@
+{
+  "jobs": [
+    {
+      "id": "ash-1", "title": "AI Operations Manager", "department": "Operations", "team": "Ops", "employmentType": "FullTime",
+      "location": "Latin America", "secondaryLocations": [{"location": "Brazil"}], "publishedAt": "2026-11-02T12:00:00.000+00:00",
+      "isListed": true, "isRemote": true, "workplaceType": "Remote",
+      "jobUrl": "https://jobs.ashbyhq.com/ashbyco/ash-1", "applyUrl": "https://jobs.ashbyhq.com/ashbyco/ash-1/application",
+      "descriptionHtml": "<p>Own AI automation.</p><h3>Requirements</h3><ul><li>Hands-on experience with n8n</li><li>Python scripting</li></ul>",
+      "descriptionPlain": "Own AI automation.\nRequirements\n- Hands-on experience with n8n\n- Python scripting",
+      "compensation": {"compensationTierSummary": "$4,500 - $6,000", "summaryComponents": [{"compensationType": "Salary", "interval": "1 MONTH", "currencyCode": "USD", "minValue": 4500, "maxValue": 6000}]}
+    },
+    {
+      "id": "ash-2", "title": "Hidden Role", "location": "Remote", "isListed": false, "isRemote": true,
+      "jobUrl": "https://jobs.ashbyhq.com/ashbyco/ash-2", "descriptionPlain": "not listed"
+    },
+    {
+      "id": "ash-3", "title": "Marketing Operations Manager", "department": "Marketing", "location": "Remote - Canada", "isListed": true,
+      "isRemote": true, "workplaceType": "Remote", "publishedAt": "2026-10-01T12:00:00.000+00:00",
+      "jobUrl": "https://jobs.ashbyhq.com/ashbyco/ash-3", "descriptionPlain": "Run marketing ops."
+    }
+  ]
+}

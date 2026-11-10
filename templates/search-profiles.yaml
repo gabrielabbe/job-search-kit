@@ -1,0 +1,44 @@
+# The candidate's search profile. The onboarding interview (.claude/skills/onboarding/SKILL.md) fills this in.
+# Until `onboarded: true`, the scanners refuse to run, so nothing is searched with placeholder targets.
+# Contains preferences only, no credentials.
+active_profile: default
+
+profiles:
+  default:
+    onboarded: false
+
+    # --- who and where (onboarding fills these in) ---
+    candidate_name: ""
+    candidate_country: ""            # ISO 3166 code of the country the candidate lives in, for example US, BR, PT, IN
+    country_name: ""                 # the same country spelled out, for example "Brazil"; used to ask job boards for it
+    location_terms: []               # words that make a posting's location eligible: the country, its region, big cities
+                                     # (worldwide words such as "anywhere" and "global" are added automatically)
+    # country_terms: ""              # optional regex alternation if the built-in country table lacks your country
+    # region_terms: ""               # optional regex alternation for regions that include your country
+    # local_feeds: []                # optional: regional boards to scan (gupy, getonbrd, european_rss); default depends on country
+    require_fully_remote: true       # false when hybrid or on-site is acceptable (then hybrid roles are scored, not rejected)
+
+    # --- pay (onboarding asks; values are monthly, in currency_reference) ---
+    pay:
+      currency_reference: USD
+      floor_monthly: null
+      good_monthly: null
+      sweet_spot_monthly: null
+      # Approximate conversion assumptions for the pay filter ONLY. Not market data; update before relying on them.
+      fx_to_usd: {USD: 1.0, EUR: 1.08, GBP: 1.27, BRL: 0.186, CAD: 0.73, INR: 0.012, MXN: 0.055}
+
+    # --- what to search for (onboarding builds these from the interview) ---
+    seniority_target: 3              # 1 junior, 2 specialist/engineer, 3 manager/lead, 4 director/head/VP, 5 C-level
+    role_families: {}                # name: {level: north_star|target|adjacent, terms: ["job title phrase", ...]}
+    extra_title_terms: []            # extra title words the scanners should keep
+    domains: []                      # industries or domains the candidate prefers
+    exclude_title_terms: []          # title words that mean "not for me"
+    # board_queries: []              # optional: exact search phrases for boards that need them (Himalayas)
+
+    thresholds:
+      priority_fit: 85               # configurable heuristics, not validated cutoffs
+      strong_fit: 70
+      min_coverage_for_number: 0.70  # below this a fit score is reported as a provisional band only
+    weights:
+      fit: {skills: 35, achievements: 25, seniority: 15, domain: 10, career: 15}
+      priority: {fit: 0.45, desirability: 0.25, contactability: 0.15, hiring_signal: 0.15}

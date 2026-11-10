@@ -1,0 +1,13 @@
+{
+  "skills": [
+    {"name": "Google Workspace", "aliases": [], "domain": "it-admin", "kind": "direct", "proficiency": 5, "last_used": "2026-11", "evidence_ids": ["EV-0001", "EV-0002"], "confidence": "high", "gaps": []},
+    {"name": "Identity and access management", "aliases": ["iam", "sso", "mfa"], "domain": "security", "kind": "direct", "proficiency": null, "last_used": null, "evidence_ids": ["EV-0002"], "confidence": "medium", "gaps": []},
+    {"name": "n8n", "aliases": [], "domain": "automation", "kind": "direct", "proficiency": 3, "last_used": null, "evidence_ids": ["EV-0002"], "confidence": "medium", "gaps": []},
+    {"name": "Python", "aliases": [], "domain": "engineering", "kind": "direct", "proficiency": 4, "last_used": null, "evidence_ids": ["EV-0001", "EV-0002"], "confidence": "medium", "gaps": []},
+    {"name": "IT management", "aliases": ["it operations", "leading an it team"], "domain": "leadership", "kind": "direct", "proficiency": null, "last_used": null, "evidence_ids": ["EV-0001"], "confidence": "medium", "gaps": []}
+  ],
+  "not_claimed": [
+    {"name": "cloud engineering", "aliases": ["aws"], "status": "confirmed_gap", "note": "not claimed"},
+    {"name": "okta", "aliases": [], "status": "unrecorded", "note": "not recorded"}
+  ]
+}

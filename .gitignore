@@ -1,0 +1,22 @@
+__pycache__/
+node_modules/
+.venv/
+.pytest_cache/
+.env
+*.mp4
+output/
+
+# --- everything personal to the candidate stays out of Git ---
+# Created from templates/ on first run (scripts/onboarding_status.py), then filled in by the onboarding interview.
+.claude/memory/
+config/search-profiles.yaml
+data/*
+!data/evidence/
+data/evidence/*
+!data/evidence/schema.json
+jobs/
+reference/
+linkedin/
+portfolio/
+resumes/*
+!resumes/resume template/

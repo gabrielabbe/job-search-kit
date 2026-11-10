@@ -1,0 +1,15 @@
+[
+  {
+    "id": "aaaa-1", "text": "Head of IT", "hostedUrl": "https://jobs.lever.co/leverco/aaaa-1", "applyUrl": "https://jobs.lever.co/leverco/aaaa-1/apply",
+    "createdAt": 1793000000000, "workplaceType": "remote", "country": "BR",
+    "categories": {"commitment": "Full-time", "department": "IT", "location": "Remote - Worldwide", "allLocations": ["Remote - Worldwide"]},
+    "descriptionPlain": "Own IT end to end.\nRequirements\n- Experience with Google Workspace\n- Experience leading an IT team",
+    "salaryRange": {"min": 5000, "max": 6500, "currency": "USD", "interval": "per-month-salary"}
+  },
+  {
+    "id": "aaaa-2", "text": "Office Manager", "hostedUrl": "https://jobs.lever.co/leverco/aaaa-2", "applyUrl": "https://jobs.lever.co/leverco/aaaa-2/apply",
+    "createdAt": 1793000000000, "workplaceType": "on-site",
+    "categories": {"commitment": "Full-time", "department": "Operations", "location": "Sao Paulo", "allLocations": ["Sao Paulo"]},
+    "descriptionPlain": "Run the office."
+  }
+]

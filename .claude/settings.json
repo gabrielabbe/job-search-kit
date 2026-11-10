@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(./**)",
+      "Edit(./**)",
+      "Write(./**)",
+      "Bash(*)",
+      "WebSearch",
+      "WebFetch"
+    ],
+    "deny": [
+      "Bash(curl:*submit*)",
+      "Bash(curl:*apply*)",
+      "Bash(*send-application*)",
+      "Bash(*auto-submit*)",
+      "WebFetch(*linkedin.com/jobs/apply*)",
+      "WebFetch(*greenhouse.io*apply*)",
+      "WebFetch(*lever.co*apply*)",
+      "WebFetch(*ashbyhq.com*apply*)",
+      "WebFetch(*workday*apply*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python scripts/onboarding_status.py"
+          }
+        ]
+      }
+    ]
+  },
+  "notes": {
+    "submission_gate": "Drafting, scanning and staging are automatic. Sending an application is never automatic: the deny rules block apply/submit calls, and the candidate applies personally from the link in each jobs/ folder. See .claude/agents/application-reviewer.md.",
+    "session_start": "The SessionStart hook runs scripts/onboarding_status.py. It tells Claude to run the onboarding interview until the candidate's profile is complete."
+  }
+}

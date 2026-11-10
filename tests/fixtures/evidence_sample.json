@@ -1,0 +1,32 @@
+{
+  "records": [
+    {
+      "id": "EV-0001", "claim": "Led IT for a fictional remote organization (test data).", "employer": "FixtureOrg", "role": "IT Manager",
+      "period": {"start": "2023-01", "end": null}, "ownership": "accountable", "reporting_line": "CEO and COO",
+      "scope": {"organization_headcount": 150, "students": null, "users_supported": null, "it_team_size": null, "direct_reports": 3, "budget_usd": null},
+      "actions": ["Rebuilt the department"], "technologies": ["Google Workspace"],
+      "outcomes": [{"metric": "tickets closed", "value": "within 24 hours", "period": null, "method": null, "baseline": null}],
+      "sources": [{"type": "candidate_statement", "reference": "test", "date": "2026-11-06"}],
+      "verification": "candidate_confirmed", "confidence": "high", "disclosure": "approved", "last_confirmed": "2026-11-06",
+      "conflicts": [], "tags": ["it-management"]
+    },
+    {
+      "id": "EV-0002", "claim": "Built an identity automation (test data).", "employer": "FixtureOrg", "role": "IT Manager",
+      "period": {"start": null, "end": null}, "ownership": "accountable", "reporting_line": null,
+      "scope": {"organization_headcount": null, "students": null, "users_supported": null, "it_team_size": null, "direct_reports": null, "budget_usd": null},
+      "actions": [], "technologies": ["Google Workspace API"],
+      "outcomes": [{"metric": "manual time", "value": "30-45 minutes to a few minutes", "period": null, "method": null, "baseline": null}],
+      "sources": [{"type": "candidate_statement", "reference": "test", "date": "2026-11-06"}],
+      "verification": "candidate_reported", "confidence": "medium", "disclosure": "approved", "last_confirmed": null,
+      "conflicts": ["baseline unrecorded"], "tags": ["iam", "automation"]
+    },
+    {
+      "id": "EV-0003", "claim": "Unverified statement (test data).", "employer": "FixtureOrg", "role": "IT Manager",
+      "period": {"start": null, "end": null}, "ownership": "unknown", "reporting_line": null,
+      "scope": {"organization_headcount": null, "students": null, "users_supported": null, "it_team_size": null, "direct_reports": null, "budget_usd": null},
+      "actions": [], "technologies": [], "outcomes": [],
+      "sources": [{"type": "candidate_statement", "reference": "test", "date": "2026-11-06"}],
+      "verification": "unverified", "confidence": "low", "disclosure": "approved", "last_confirmed": null, "conflicts": [], "tags": []
+    }
+  ]
+}

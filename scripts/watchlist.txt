@@ -1,0 +1,637 @@
+# --- batch 2: more remote-first, LATAM-hiring, ops/IT/automation/martech-heavy employers ---
+# Company slugs to try on Greenhouse / Lever / Ashby / Workable. Unknown slugs are skipped silently.
+# Remote-first and global employers, LATAM-hiring companies, GTM / automation / martech / IT-heavy firms.
+1password
+2u
+6sense
+activecampaign
+agorapulse
+airbyte dbtlabs fivetran hightouch census segment amplitude mixpanel braze customerio hubspot
+airtable
+airtable-inc coda-io clickup-inc softr bubble-io retool-inc appsmith
+alura
+amino
+aminohealth
+amplitude
+andela
+andela-inc crossover-inc turing-com lemon-io arc-dev
+angellist
+anthology
+anthropic
+apollo
+arcoplatforma
+asana
+asana monday clickup trello atlassian slack zoom dropbox box docusign twilio sendgrid
+automattic
+automattic-careers remote-com remotecom oysterhr rivermate globalization-partners
+automox kandji jumpcloud okta onelogin sailpoint cyberark tailscale
+babbel
+bairesdev
+bamboohr checkr samsara-inc duolingo coursera udemy skillshare masterclass
+benchling samsara gusto lattice culture-amp 15five leapsome personio factorialhr
+bitso
+bitwarden
+bold
+boldcorp
+bolt-new lovable replit cursor anysphere cognition anthropic openai cohere mistral
+brainlabs
+brainly
+braintrust
+braze
+brevo
+buffer
+busuu
+campusgroups
+camunda
+canonical
+cardinaldigital
+celigo
+cengage
+census
+chegg
+clarivate
+classdojo
+clay
+clever
+clickup
+clip
+close
+cloudwalk
+codecademy
+cogna
+cohere
+conta-azul
+conta-azul contaazul omie bling totvs-inc senior-sistemas
+contaazul
+contentsquare
+cora
+coursera
+creditas
+crossover
+cultureamp
+d2l
+datadog mongodb canonical automattic buffer toggl hotjar sentry mozilla wikimedia 1password doist
+datastax couchbase neo4j redis redislabs cockroachlabs planetscale
+decagon
+deel
+deel-inc papaya remote-inc
+demandbase
+descomplica
+digitalmarketingdepot
+directive
+disruptiveadvertising
+dlocal
+docebo
+dragonfly
+drata
+duckduckgo
+duolingo
+ebanx
+eduzz
+edx
+eggai
+elastic
+element451
+ellucian
+elsevier
+emeritus
+encora
+endava encora shopify stripe coinbase kraken bitso binance okx gemini chainalysis anchorage
+factorial
+figma
+fiverr
+fivetran-inc stitch matillion rudderstack segment-inc mparticle
+fleetdm vanta drata secureframe thoropass sprinto
+fly
+fractl
+freshworks
+front
+front-app crisp-chat tidio drift-inc
+gainsight totango churnzero vitally planhat catalyst
+gitlab
+gitlab remote deel zapier clay n8n posthog supabase vercel netlify grafanalabs cloudflare elastic
+gitlab-inc github
+glean
+globant
+gong
+gorgias
+gradescope
+grafanalabs
+growthcollective
+guild
+guildeducation
+gusto
+gympass wellhub zenklub dock dock-tech olist olist-br
+handshake
+hashicorp
+hashicorp pulumi terraform spacelift env0 scalr
+hawkemedia
+helpscout
+hibob
+hibob workable recruitee teamtailor lever greenhouse ashby smartrecruiters
+hightouch
+hootsuite
+hotjar
+hotjar buffer toggl-track doist-careers basecamp 37signals zapier-inc
+hotjar-ltd typeform surveymonkey qualtrics medallia userzoom maze dovetail
+hotmart
+hotmart-1 convertkit kajabi teachable thinkific
+hotmart-br eduzz kiwify monetizze
+hubspot
+hubstaff
+huggingface scale-ai labelbox snorkel weaviate pinecone qdrant chroma
+ifood
+ignitevisibility
+inbeat
+inbeat-agency
+inbeatagency
+instructure
+intercom
+intercom zendesk notion airtable webflow figma linear retool ramp mercury brex wise revolut
+italki
+iterable
+jamf
+jellyfish
+jumpcloud
+june mixpanel-inc heap-inc pendo walkme whatfix userpilot appcues
+justworks
+kahoot
+kajabi
+kandji
+kavak
+khanacademy
+klaviyo
+konfio
+kroton
+kustomer
+langchain llamaindex crewai relevanceai lindy-ai tray-io workato make celonis
+later
+lattice
+launchdarkly-inc split optimizely statsig-inc growthbook posthog-inc
+leapsome
+ledger consensys circle paxos ripple semrush similarweb zoominfo clari outreach gong apollo
+lemlist pipedrive brevo mailchimp klaviyo attentive iterable sprinklr workmotion papayaglobal
+lemon
+lemonade-inc wealthsimple betterment robinhood
+lido
+lidofinance
+linear
+lingoda
+loft
+loom
+mailchimp
+mailgun pagerduty launchdarkly statsig amplitude heap fullstory logrocket sentry-io
+mainstay
+make
+masterclass
+mediasourceinc
+mentimeter
+mercadolibre
+mercadopago ualabr ualá dlocal-inc ebanx-inc pismo-io
+metabase lightdash preset hex-tech mode-analytics sigma-computing thoughtspot
+mheducation
+miro
+mistral
+mixpanel
+moderncampus
+monday
+monks
+movile
+mozilla
+mparticle
+ncubelabs
+nearsure
+nectafy
+neon
+neon creditas-br loggi lalamove 99app rappi-inc
+nerdy
+newzoo
+nomadinternet
+notion
+nubank
+nubank mercadolibre stone pagseguro gupy vtex rappi ifood loft creditas quintoandar hotmart
+nubank-br nu-mexico picpay inter inter-co c6bank bancopan
+okta
+olist
+oneleet
+openai
+openclassrooms
+openstax
+orbitmedia
+outreach
+oyster
+oysterhr
+oysterhr velocity-global multiplier rippling gusto justworks remofirst lano omnipresent
+pagbank
+papayaglobal
+paradigm
+pearson
+perpetual
+perplexity
+personio
+pipefy
+pluralsight
+podia
+posthog
+power-digital
+powerdigitalmarketing
+powerschool
+preply
+prismic contentful storyblok sanity strapi directus ghost medium substack
+proquest
+quizlet
+rappi
+rdstation
+rdstation zenvia totvs thoughtworks toptal turing andela crossover bairesdev wizeline globant
+remote
+remotecom
+render
+resultadosdigitais
+retool
+revelo
+rippling
+rockcontent
+rudderstack
+ruvixx onstrider strider
+safetywing nomadhealth hotmart-company dlocal ebanx pismo nuvemshop tiendanube mural miro
+salesloft
+salesloft outreach-io mutiny 6sense demandbase terminus rollworks
+sanity
+scalearmy
+secureframe
+seer
+seerinteractive
+segment
+semrush
+sendgrid
+sendoso reachdesk alyce postal-io
+shopify-inc bigcommerce commercetools vtex-inc tray-io nuvemshop-inc
+sierra
+similarweb
+singlegrain
+skillshare
+smartsheet
+smartsites
+sourcegraph tabnine codeium windsurf replit-inc sentry-inc
+sparkpost postmark mailjet sendinblue brevo-inc
+sprinto
+sproutsocial
+stackadapt
+supportninja unity-ai
+symplicity
+tableau-software looker domo
+take
+takeblip
+teachable
+technolutions
+tecla
+terminus
+thinkific
+thoropass
+thrivedigital
+timescale clickhouse starburst dremio databricks snowflake
+tinuiti
+toggl
+toptal
+tray
+tsk
+tskglobal
+turing
+turnitin
+udemy
+uipath automationanywhere blueprism pega servicenow
+unbounce instapage leadpages hubspot-inc marketo-inc
+upwork
+vanta
+velocity
+vercel
+vercel-inc netlify-inc render railway fly-io digitalocean linode akamai
+vtex
+webfx
+wellfound
+wikimedia
+wiley
+wizeline
+workana
+workato
+workos clerk resend loops-so beehiiv convertkit kit-com
+wpromote
+yotpo okendo stamped klaviyo-inc omnisend drip
+zapier
+zendesk
+zendesk-inc freshdesk freshworks-inc helpscout gorgias kustomer
+zenvia
+zoho
+zoho zohocorp freshworks freshworks-inc chargebee postman browserstack hasura
+zohocorp
+zoominfo
+
+jobgether
+
+# discovered 2026-10-29
+able
+accesso
+allright
+allshoretalent
+alpaca
+altevarcm
+altisales
+askable
+atmosera
+axis
+axisteletherapy
+b12
+barkleyokrp
+beigene
+bigid
+blackbox-strategies
+blinkhealth
+bluelightconsulting
+brightfield
+bryantparkconsulting
+btgpactual
+bybit
+carrotfertility
+caseinpointconsulting
+ciq
+clarity
+clear
+clera
+climate
+coinme
+coinpoker
+cookunity
+correlationone
+crystalintelligence
+darkroom
+deeter-analytics
+despegar
+devexperts
+dianthustherapeutics
+digitalforms
+distantjob
+distribusion
+donorbox
+doppel
+echo
+eclipse
+elsa
+engine
+evb
+exelab
+factored
+featherlessai
+filecoinfoundation
+find
+finstrat-management
+finyard
+firstprinciples
+flex
+flex-databases
+freedup
+genedx
+generate
+generatebiomedicines
+givedirectly
+globalli
+gofasti
+grid
+growe
+growe-talents
+growetalents
+gruns
+hackerrank
+hardrockdigital
+harmonic
+heritageholdings
+hiddenlayer
+humansignal
+icon
+imnoo
+impact
+impactbrands
+improvado
+indg
+indigo
+interdependence
+international
+internationalyouthfederation
+invisible
+job
+joinready
+jumpfactor
+l21s-gmbh
+livenationentertainment
+lumimeds
+luscii
+mailerlite
+main5
+makina
+maliasili
+massive-rocket
+massiverocket
+menaconsultant
+mercor
+metal
+metalab
+mighty
+mightynetworks
+motivity
+native
+nebius
+newsela
+nisc
+nortal
+novakidschool
+offshorelaunch
+openup
+openzeppelin
+opinov8
+orderly
+paralucent
+partyhat
+performance-development
+phdata
+phizenix
+pipe17
+plan-international
+power
+praxent
+precisionmedicine
+prosper
+prosperhealth
+proton
+prove
+psi
+psicro
+pulse
+raenest
+ready
+regent
+relationalai
+respond-io
+revenuebase-inc
+rws
+saasgroup
+scholarshipowl
+securityscorecard
+sezzle
+sophos
+space
+spaceinch
+spotter
+stackblitz
+startale
+stellar
+sterlingtonpllc
+strategic-systems-international
+superformula
+supportyourapp
+talent
+talentsam
+techbizglobal
+telus
+tensorops
+terac
+teravision
+tether
+the-global-talent-co
+thefaculty
+thinkacademyus
+tradetracker
+trafilea
+trustflight
+uasi
+unifonic
+vapaus
+vetto
+whitecollars
+whitetech
+willowinnovations
+workidentity
+xai
+yourpersonalai
+yuno
+zelh
+zippi
+zvoove
+
+# from career-ops portals.example.yml 2026-10-29
+abnormalsecurity
+ada
+addi
+alephalpha
+amplemarket
+arizeai
+attio
+bishopfox
+black-forest-labs
+bland
+boomilp
+bugcrowd
+causaly
+chainguard
+channable
+clara
+claylabs
+coalfire
+cobre
+coreweave
+corti
+cradlebio
+deepgram
+deepl
+deuna
+elevenlabs
+example
+faculty
+forto
+getyourguide
+glacis-ai
+gleanwork
+hackerone
+hellofresh
+helsing
+humeai
+huntress
+inngest
+isomorphiclabs
+jumia
+klue
+legora
+lindy
+mollie
+moniepoint
+n26
+palantir
+parloa
+perk
+photoroom
+physicsx
+pigment
+pleo
+polyai
+praetorian
+qonto
+runpod
+safariai
+sanctuary
+scandit
+semgrep
+simetrik
+speechmatics
+spotify
+stabilityai
+sumup
+synthesia
+templafy
+temporal
+tinybird
+traderepublicbank
+vapi
+wayve
+wizinc
+automatticcareers
+caci
+
+# discovered 2026-11-09
+activetheory
+aida
+airdna
+airtm
+apply
+applydigital
+atomic
+bobtail
+buzzsolutions
+caylent
+connect
+crimsoneducation
+elitebrain
+euronet
+highgrowth-io
+hypr
+kayzen
+lifted
+lodgify
+logos
+lurecruiter
+mercyforanimals
+nectar
+nimble
+nimblegravity
+ourassistants
+padsplit
+panopto
+pearl
+permitflow
+prosidianconsulting
+qima
+roofr
+softwaremind
+telus-digital
+the-studio
+urrly
+weloglobal
+wing
+wishpond

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence and skills contract",
+  "description": "Implements career-intelligence-upgrade/03-EVIDENCE-AND-SKILLS-MODEL.md. Organization headcount, students, users supported and direct reports are separate fields and must never be merged.",
+  "definitions": {
+    "evidence": {
+      "type": "object",
+      "required": ["id", "claim", "employer", "role", "ownership", "scope", "verification", "confidence", "disclosure", "sources"],
+      "additionalProperties": true,
+      "properties": {
+        "id": {"type": "string", "pattern": "^EV-[0-9]{4}$"},
+        "claim": {"type": "string", "minLength": 5},
+        "employer": {"type": "string"},
+        "role": {"type": "string"},
+        "period": {"type": "object", "properties": {"start": {"type": ["string", "null"]}, "end": {"type": ["string", "null"]}}},
+        "ownership": {"enum": ["accountable", "led_team", "individual_contributor", "contributor", "unknown"]},
+        "reporting_line": {"type": ["string", "null"]},
+        "scope": {
+          "type": "object",
+          "properties": {
+            "organization_headcount": {"type": ["integer", "null"]},
+            "students": {"type": ["integer", "null"]},
+            "users_supported": {"type": ["integer", "null"]},
+            "it_team_size": {"type": ["integer", "null"]},
+            "direct_reports": {"type": ["integer", "null"]},
+            "budget_usd": {"type": ["number", "null"]}
+          },
+          "additionalProperties": false
+        },
+        "actions": {"type": "array", "items": {"type": "string"}},
+        "technologies": {"type": "array", "items": {"type": "string"}},
+        "outcomes": {
+          "type": "array",
+          "items": {"type": "object", "properties": {"metric": {"type": ["string", "null"]}, "value": {"type": ["string", "number", "null"]}, "period": {"type": ["string", "null"]}, "method": {"type": ["string", "null"]}, "baseline": {"type": ["string", "null"]}}}
+        },
+        "sources": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["type"], "properties": {"type": {"type": "string"}, "reference": {"type": ["string", "null"]}, "date": {"type": ["string", "null"]}}}},
+        "verification": {"enum": ["document_verified", "candidate_confirmed", "candidate_reported", "unverified", "contradicted"]},
+        "confidence": {"enum": ["high", "medium", "low"]},
+        "disclosure": {"enum": ["approved", "restricted", "unknown"]},
+        "last_confirmed": {"type": ["string", "null"]},
+        "conflicts": {"type": "array", "items": {"type": "string"}},
+        "tags": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "skill": {
+      "type": "object",
+      "required": ["name", "kind", "proficiency", "evidence_ids", "confidence"],
+      "properties": {
+        "name": {"type": "string"},
+        "aliases": {"type": "array", "items": {"type": "string"}},
+        "domain": {"type": "string"},
+        "kind": {"enum": ["direct", "transferable", "conceptual"]},
+        "proficiency": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
+        "last_used": {"type": ["string", "null"]},
+        "evidence_ids": {"type": "array", "items": {"type": "string"}},
+        "confidence": {"enum": ["high", "medium", "low"]},
+        "gaps": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

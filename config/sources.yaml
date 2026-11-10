@@ -1,0 +1,45 @@
+# Source registry. Allowlist only: nothing outside these providers is fetched.
+# See docs/source-compliance.md. Rate limits are per host.
+defaults:
+  min_interval_seconds: 1.0
+  timeout_seconds: 25
+  max_retries: 3
+  backoff_cap_seconds: 30
+providers:
+  greenhouse:
+    enabled: true
+    api: https://boards-api.greenhouse.io/v1/boards/{slug}/jobs
+    notes: public board API, no key; pay_transparency=true and content=true are requested
+  lever:
+    enabled: true
+    api: https://api.lever.co/v0/postings/{slug}
+    notes: public postings API, no key
+  ashby:
+    enabled: true
+    api: https://api.ashbyhq.com/posting-api/job-board/{slug}
+    notes: public posting API, no key
+  smartrecruiters:
+    enabled: true
+    api: https://api.smartrecruiters.com/v1/companies/{slug}/postings
+    notes: public postings, 100 per page, paged on offset
+  usajobs:
+    enabled: false
+    notes: BLOCKED. Needs an API key (USAJOBS_API_KEY, USAJOBS_USER_AGENT) and is oriented to US federal hiring
+  careers_jsonld:
+    enabled: false
+    notes: PLANNED. Permitted employer careers pages only, JSON-LD JobPosting first
+  crawl4ai:
+    enabled: false
+    notes: PLANNED. Per-domain robots.txt and terms review required first
+  scrapy:
+    enabled: false
+    notes: PLANNED. Per-domain allowlist, throttling and retry policy required first
+  scrapegraphai:
+    enabled: false
+    notes: OPTIONAL, not integrated. Only if simple parsing fails
+  jobspy:
+    enabled: false
+    notes: REJECTED by default (decisions D-6). Scrapes LinkedIn, Indeed, Glassdoor; supports proxies to bypass blocking
+registry_imports:
+  watchlist: scripts/watchlist.txt   # slugs only, ats_confidence=unverified until a fetch returns rows
+denylist_domains: []

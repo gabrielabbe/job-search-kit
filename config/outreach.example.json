@@ -1,0 +1,16 @@
+{
+  "_note": "Copy to data/profile/outreach.json (git-ignored). Written by the onboarding interview from facts the candidate confirmed. Used by scripts/outreach.py and scripts/build_resume.py.",
+  "name": "Full Name",
+  "linkedin": "https://www.linkedin.com/in/your-profile/",
+  "location_en": "I am based in City, Country (UTC-3), working fully remote, with overlap with US and European hours.",
+  "location_pt": "",
+  "li_pitch": "One sentence on what you do now, taken from your confirmed evidence.",
+  "li_pitch_pt": "",
+  "proof": {
+    "default": [
+      "Proof point 1, a real fact from your evidence base.",
+      "Proof point 2, a real fact from your evidence base.",
+      "Proof point 3 (used in the follow-up), a real fact from your evidence base."
+    ]
+  }
+}

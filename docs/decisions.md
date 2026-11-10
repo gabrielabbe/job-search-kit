@@ -1,0 +1,13 @@
+# Decisions log
+
+| ID | Date | Decision | Reason | Revisit when |
+|---|---|---|---|---|
+| D-1 | 2026-11-06 | SQLite + FTS5 as the store; no PostgreSQL/pgvector yet | No Postgres or Docker installed; playbook says no vector DB by default; the turbo runbook allows SQLite for local mode | A Postgres instance exists or semantic recall is measurably missing |
+| D-2 | 2026-11-06 | Eligibility is judged for a candidate living in the profile's country; worldwide is not required | The candidate's target-roles.md and onboarding answers | The candidate changes residency or relocates |
+| D-3 | 2026-11-06 | Plain-Python resumable pipeline instead of LangGraph for now | The pipeline is linear (discover -> normalize -> dedupe -> eligibility -> fit -> shortlist -> package -> approval). LangGraph would add a dependency with no branching to justify it. Each step is idempotent and logged, so it can be wrapped in LangGraph later | Branching, human-in-the-loop interrupts or parallel agents are needed |
+| D-4 | 2026-11-06 | Keep `scripts/` legacy scanners running unchanged | They produce the daily candidate list that works today; replacing them without a side-by-side period would be a regression risk | After a week of comparison runs (P-4) |
+| D-5 | 2026-11-06 | Keep the one-page, no-years résumé rules over the playbook's 1-2 pages | Decided by the owner of this project (honesty-guardrails.md) | The candidate changes them |
+| D-6 | 2026-11-06 | JobSpy rejected as a default dependency | It scrapes LinkedIn, Indeed, Glassdoor, ZipRecruiter and advertises proxy support to bypass blocking; those sites prohibit automated collection. Conflicts with the compliance rules in 02-OPEN-SOURCE-COLLECTION | Never for those sources |
+| D-7 | 2026-11-06 | `freehire` and `ats-job-boards-reference` used as references, not dependencies | freehire is a large Go service (MIT, active) with its own dataset, not a library; the reference repo documents real API traps (empty board vs wrong slug, SmartRecruiters 100 cap, Greenhouse `pay_transparency`) which are built into the connectors with attribution | Evaluate freehire's API as a discovery feed after the connectors are proven |
+| D-8 | 2026-11-06 | Fit scores are deterministic and evidence-linked; no LLM in the scoring path | Reproducible, testable, no candidate data leaves the machine | A measured accuracy gap against human scoring |
+| D-9 | 2026-11-06 | A package cannot become SUBMITTED without a stored approval for the exact version hash, and SUBMITTED requires a confirmation reference typed by the user | Matches "no unattended submission" and "do not claim completion without confirmation" | Never relaxed silently |

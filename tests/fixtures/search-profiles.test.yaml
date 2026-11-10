@@ -1,0 +1,43 @@
+# Test profile (generic): used only by the test suite, never by the scanners.
+# PRIVATE-ish preferences; contains no credentials. Test data only.
+profiles:
+  test:
+    candidate_country: BR            # residency. Eligibility is judged for this country (decision D-2).
+    require_fully_remote: true       # hybrid and on-site are ineligible (Brazilian on-site exceptions are flagged by hand)
+    pay:
+      currency_reference: USD
+      floor_monthly: 3500
+      good_monthly: 4000
+      sweet_spot_monthly: 5000
+      # Approximate conversion assumptions for the pay filter ONLY. Not market data; update before relying on them.
+      fx_to_usd: {USD: 1.0, EUR: 1.08, GBP: 1.27, BRL: 0.186, CAD: 0.73}
+    seniority_target: 3              # 1 junior, 2 specialist/engineer, 3 manager/lead, 4 director/head/VP, 5 C-level
+    role_families:                   # weight: north_star > target > adjacent
+      it_management:
+        level: north_star
+        terms: ["it manager", "head of it", "director of it", "it operations", "corporate it", "it lead", "head of technology",
+                "technology manager", "infrastructure manager", "workplace technology", "business systems", "enterprise systems"]
+      ai_operations:
+        level: north_star
+        terms: ["ai operations", "ai automation", "automation manager", "ai enablement", "ai adoption", "ai transformation",
+                "automation lead", "ai implementation"]
+      martech_gtm:
+        level: target
+        terms: ["martech", "marketing operations", "gtm engineer", "gtm operations", "revenue operations", "revops",
+                "marketing technology", "marketing automation"]
+      tech_management:
+        level: target
+        terms: ["engineering manager", "technical program manager", "platform manager", "internal tools", "it engineering"]
+      data_reporting:
+        level: adjacent
+        terms: ["analytics manager", "bi manager", "reporting", "data analyst", "analytics engineer", "business intelligence"]
+    domains: ["higher education", "university", "edtech", "marketing agency", "saas", "identity", "automation"]
+    exclude_title_terms: ["intern", "software engineer", "backend", "frontend", "full stack", "devops engineer",
+                          "machine learning engineer", "data scientist", "sales development", "account executive", "recruiter"]
+    thresholds:
+      priority_fit: 85               # configurable heuristics, not validated cutoffs
+      strong_fit: 70
+      min_coverage_for_number: 0.70  # below this a fit score is reported as a provisional band only
+    weights:
+      fit: {skills: 35, achievements: 25, seniority: 15, domain: 10, career: 15}
+      priority: {fit: 0.45, desirability: 0.25, contactability: 0.15, hiring_signal: 0.15}
